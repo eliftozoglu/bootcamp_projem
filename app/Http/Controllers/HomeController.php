@@ -63,4 +63,7 @@ class HomeController extends Controller
 
         return 'Kullanıcı kaydı silindi ' ;      //->first()->name; dersek ilk elemana ulaşabiliriz
     }
+    public function homepage(){
+        return view('home-page');
+    }
 }

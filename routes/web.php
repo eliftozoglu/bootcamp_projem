@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('home-page');
-});
+
+Route::get('/', 'HomeController@homepage')->name('home-page');
 
 //Route::get('/newlogin', 'LoginController@LoginView');
 //Route::post('login#', 'LoginController@login')->name('login');
@@ -35,9 +34,14 @@ Route::get('/guncelle/{id}','HomeController@updateView')->where(array('id'=>'[0-
 Route::get('/user-import', 'ExcelUploadController@UserImportView')->name('user.upload');
 Route::post('/user-import-post', 'ExcelUploadController@userImport')->name('user.import');
 Route::get('/indir','ExcelDownloadController@userDownload')->name('user.download');
+Route::get('/product.html', 'ProductController@ProductList')->name('product-list');
+Route::get('/blog.html', 'ProductController@blog');
+Route::get('/pricing.html', 'ProductController@Pricing');
+
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

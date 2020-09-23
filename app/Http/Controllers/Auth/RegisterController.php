@@ -7,7 +7,10 @@ use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Symfony\Component\Console\Input\Input;
 
 class RegisterController extends Controller
 {
@@ -64,10 +67,23 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $to_name = 'Welcome!';
+        $to_email= $data['email'];
+        $username = $data['name'];
+        $body =[];
+        $mailData=array('body'=>$body, 'username'=>$username);
+
+        Mail::send('email.email-register', $mailData, function($message) use ($to_name, $to_email){
+            $message->to($to_email, $to_name)->subject('Your registration is succesful!');
+            $message->from(env('MAIL_USERNAME'));
+        });
+
+            return $user;
     }
 }

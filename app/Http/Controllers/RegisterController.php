@@ -24,4 +24,5 @@ class RegisterController extends Controller
         return 'Kayıt başarıyla tamamlandı!';
     }
 
+
 }
