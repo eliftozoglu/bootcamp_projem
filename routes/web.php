@@ -24,22 +24,35 @@ Route::get('/', 'HomeController@homepage')->name('home-page');
 //Route::get('/products', 'ProductController@productlist');
 
 
-Route::get('/admin', 'AdminController@index');
+Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/kayit','HomeController@createView');
 Route::post('/kaydet','HomeController@create');
-Route::get('/index', 'HomeController@list');
+Route::get('/index', 'HomeController@list')->name('index');
 Route::get('/sil/{id}', 'HomeController@delete')->where(array('id'=>'[0-9]+')); // sil/aa yapınca not foun yazar sayı dışındakiler için çalışmasını engelliyor
 Route::post('/guncelle/{id}', 'HomeController@update');
 Route::get('/guncelle/{id}','HomeController@updateView')->where(array('id'=>'[0-9]+'));
 Route::get('/user-import', 'ExcelUploadController@UserImportView')->name('user.upload');
 Route::post('/user-import-post', 'ExcelUploadController@userImport')->name('user.import');
 Route::get('/indir','ExcelDownloadController@userDownload')->name('user.download');
-Route::get('/product.html', 'ProductController@ProductList')->name('product-list');
-Route::get('/blog.html', 'ProductController@blog');
-Route::get('/pricing.html', 'ProductController@Pricing');
+//Route::get('/product.html', 'ProductController@ProductList')->name('product-list');
 
+Route::get('/shop', 'ProductController@ProductList')->name('product-list');
+Route::get('/blog', 'ProductController@blog')->name('blog');
+Route::get('/pricing', 'ProductController@pricing')->name('pricing');
+Route::get('/add-product','ProductController@addProductView')->name('product.add');
+Route::post('/save-product', 'ProductController@productCreate')->name('product.create');
 
+//presentation ekleme
+Route::get('/add-presentation', 'ProductController@addPresentationView')->name('presentation-add');
+Route::post('/save-presentation', 'ProductController@addPresentation')->name('presentation-create');
+//report ekleme
+Route::get('/add-report', 'ProductController@addReportView')->name('report-add');
+Route::post('/save-report', 'ProductController@addReport')->name('report-create');
+//email ekleme
 
+Route::get('/index-presentations', 'ProductController@indexPresentations')->name('list.presentations');
+Route::get('/index-reports', 'ProductController@indexReports')->name('list.reports');
+Route::get('/index-emails', 'ProductController@indexEmails')->name('list.emails');
 
 Auth::routes();
 

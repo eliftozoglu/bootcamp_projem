@@ -7,30 +7,188 @@
   <component name="ChangeListManager">
     <list default="true" id="2509fdf4-19f6-4f40-adec-947d487d9731" name="Default Changelist" comment="i added product page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/js/main.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/_normalize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/abstracts/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/abstracts/_include-media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/abstracts/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/abstracts/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/base/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/base/_helpers.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/base/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/components/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_features.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_hero.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/layout/_pricing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_01_172728_presentations.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_01_172728_presentations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_01_173143_reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_01_173143_reports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/bootstrap/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/css/mixins/_text-hide.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/ionicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/jquery.timepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/open-iconic-bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/backup.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/_flaticon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/font/flaticon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/flaticon/license/license.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon/icomoon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon/icomoon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/icomoon/icomoon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/css/_ionicons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/css/ionicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/fonts/ionicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/fonts/ionicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/fonts/ionicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/fonts/ionicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/ionicons/fonts/ionicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/open-iconic/open-iconic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/open-iconic/open-iconic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/open-iconic/open-iconic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/open-iconic/open-iconic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/open-iconic/open-iconic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Bottom_section.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Guy_computer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/abcd.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/bg_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/facebook2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/first_imag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/image_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/instagram2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/linkedin2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/loc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logoos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/person_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/person_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/person_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/person_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/twitter2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/google-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery-migrate-3.0.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.animateNumber.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.stellar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/range.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scrollax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog/blog-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog/blog-page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin-master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin-master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pricing/pricing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pricing/pricing-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/products-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/products-layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/loginpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/loginpage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/registerpage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/registerpage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +204,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -187,22 +346,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\www\laravel_2\public\img\bg-img" />
+      <recent name="C:\Users\asus\www\laravel_2\public\img\core-img" />
+      <recent name="C:\Users\asus\www\laravel_2\resources\views\pricing" />
+      <recent name="C:\Users\asus\www\laravel_2\public" />
+      <recent name="C:\Users\asus\www\laravel_2\public\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus\www\laravel_2\resources\views\products" />
       <recent name="C:\Users\asus\www\laravel_2\public" />
       <recent name="C:\Users\asus\www\laravel_2\public\admintemplate" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\asus\www\laravel_2\public\images" />
-      <recent name="C:\Users\asus\www\laravel_2\public" />
-      <recent name="C:\Users\asus\www\laravel_2\public\asset\css" />
-      <recent name="C:\Users\asus\www\laravel_2\public\homepage" />
-      <recent name="C:\Users\asus\www\laravel_2\public\uza-template" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Page.laravel_2">
@@ -254,7 +414,13 @@
       <workItem from="1600693030357" duration="3675000" />
       <workItem from="1600765866984" duration="7590000" />
       <workItem from="1600794913171" duration="5757000" />
-      <workItem from="1600855780128" duration="1640000" />
+      <workItem from="1600855780128" duration="6684000" />
+      <workItem from="1601050828035" duration="8611000" />
+      <workItem from="1601103379364" duration="816000" />
+      <workItem from="1601118470645" duration="28383000" />
+      <workItem from="1601192127316" duration="4348000" />
+      <workItem from="1601456571806" duration="10069000" />
+      <workItem from="1601481569214" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="i added product page">
       <created>1600512991321</created>
@@ -294,34 +460,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1600113427878" />
-    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600693333890">
+    <state x="390" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601135217353">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1600693333890" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1600795159399">
+    <state x="390" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1601135217353" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601053022139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600795159399" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1601053022139" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1601492670235">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1601492670235" />
     <state x="465" y="243" key="Github.CreateGistDialog" timestamp="1600259239308">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="465" y="243" key="Github.CreateGistDialog/0.0.1280.680@0.0.1280.680" timestamp="1600259239308" />
-    <state x="437" y="64" key="NewPhpClassDialog" timestamp="1600370629267">
+    <state x="437" y="64" key="NewPhpClassDialog" timestamp="1601054976425">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="437" y="64" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1600370629267" />
+    <state x="437" y="64" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1601054976425" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1600459864795">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1600459864795" />
+    <state x="248" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1601123261798">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="248" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1601123261798" />
     <state x="0" y="0" width="910" height="667" key="dock-window-1" timestamp="1599051040502">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="910" height="667" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1599051040502" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1600765986080">
+    <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1601463703413">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1600765986080" />
+    <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1601463703413" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1601131377215">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1601131377215" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1601152531171">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1601152531171" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,11 +512,6 @@
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
           <line>30</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/products/products-layout.blade.php</url>
-          <line>65</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>

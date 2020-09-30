@@ -41,7 +41,7 @@
             <div class="row align-items-center">
                 <div class="col-md-3">
                     <div class="logo">
-                        <a href="{{asset('index.html')}}"><img src="{{asset('asset/images/icon/logo2.png')}}" alt="logo"></a>
+                        <a href="/admin"><img src="{{asset('asset/images/icon/logo2.png')}}" alt="logo"></a>
                     </div>
                 </div>
                 <!-- profile info & task notification -->
@@ -194,7 +194,7 @@
                     </div>
                     <div class="clearfix d-md-inline-block d-block">
                         <div class="user-profile m-0">
-                            <img class="avatar user-thumb" src="{{asset('asset/images/author/profil_photo.png')}}" alt="avatar">
+                            <img class="avatar user-thumb" src="{{asset('asset/images/author/avatar.png')}}" alt="avatar">
                             <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Elif TOZOĞLU <i class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Message</a>
@@ -225,41 +225,34 @@
                                     </ul>
                                 </li>
                                 <li class="active">
-                                    <a href="javascript:void(0)"><i class="ti-layout-sidebar-left"></i><span>Sidebar
-                                                Types</span></a>
+                                    <a href="javascript:void(0)"><i class="ti-layout-sidebar-left"></i><span>Add
+                                        Product </span></a>
                                     <ul class="submenu">
-                                        <li><a href="{{asset('index.html')}}">Left Sidebar</a></li>
-                                        <li class="active"><a href="{{asset('index3-horizontalmenu.html')}}">Horizontal Sidebar</a></li>
+                                        <li><a href="{{route('presentation-add')}}">Add Presentation Template</a></li>
+                                        <li><a href="{{route('report-add')}}">Add Report Template</a></li>
+                                        <li><a href="{{route('presentation-add')}}">Add E-mail Template</a></li>
+
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><i class="ti-pie-chart"></i><span>Charts</span></a>
+                                    <a href="javascript:void(0)"><i class="ti-pie-chart"></i><span>Approved/Waiting to approve</span></a>
                                     <ul class="submenu">
-                                        <li><a href="{{asset('barchart.html')}}">bar chart</a></li>
-                                        <li><a href="{{asset('linechart.html')}}">line Chart</a></li>
-                                        <li><a href="{{asset('piechart.html')}}">pie chart</a></li>
+                                        <li><a href="{{asset('barchart.html')}}">Approved Presentation Templates</a></li>
+                                        <li><a href="{{asset('linechart.html')}}">Approved Reports Templates</a></li>
+                                        <li><a href="{{asset('piechart.html')}}">Approved E-mail Templates</a></li>
+                                        <li><a href="{{asset('piechart.html')}}">WTA Presentation Templates</a></li>
+                                        <li><a href="{{asset('piechart.html')}}">WTA Report Templates</a></li>
+                                        <li><a href="{{asset('piechart.html')}}">WTA E-mail Templates</a></li>
+
                                     </ul>
                                 </li>
-                                <li class="mega-menu">
-                                    <a href="javascript:void(0)"><i class="ti-palette"></i><span>UI Features</span></a>
+                                <li>
+                                    <a href="javascript:void(0)"><i class="ti-pie-chart"></i><span>Lists</span></a>
                                     <ul class="submenu">
-                                        <li><a href="{{asset('accordion.html')}}">Accordion</a></li>
-                                        <li><a href="{{asset('alert.html')}}">Alert</a></li>
-                                        <li><a href="{{asset('badge.html')}}">Badge</a></li>
-                                        <li><a href="{{asset('button.html')}}">Button</a></li>
-                                        <li><a href="{{asset('button-group.html')}}">Button Group</a></li>
-                                        <li><a href="{{asset('cards.html')}}">Cards</a></li>
-                                        <li><a href="{{asset('dropdown.html')}}">Dropdown</a></li>
-                                        <li><a href="{{asset('list-group.html')}}">List Group</a></li>
-                                        <li><a href="{{asset('media-object.html')}}">Media Object</a></li>
-                                        <li><a href="{{asset('modal.html')}}">Modal</a></li>
-                                        <li><a href="{{asset('pagination.html')}}">Pagination</a></li>
-                                        <li><a href="{{asset('popovers.html')}}">Popover</a></li>
-                                        <li><a href="{{asset('progressbar.html')}}">Progressbar</a></li>
-                                        <li><a href="{{asset('tab.html')}}">Tab</a></li>
-                                        <li><a href="{{asset('typography.html')}}">Typography</a></li>
-                                        <li><a href="{{asset('form.html')}}">Form</a></li>
-                                        <li><a href="{{asset('grid.html')}}">grid system</a></li>
+                                        <li><a href="{{route('index')}}">List of Users</a></li>
+                                        <li><a href="{{route('list.presentations')}}">List of Presentation Templates</a></li>
+                                        <li><a href="{{route('list.reports')}}">List of Report Templates</a></li>
+                                        <li><a href="{{route('list.emails')}}">List of E-mail Templates</a></li>
                                     </ul>
                                 </li>
                                 <li class="mega-menu">
@@ -281,23 +274,6 @@
                                         <li><a href="{{asset('invoice.html')}}"><i class="ti-receipt"></i> <span>Invoice Summary</span></a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0)"><i class="ti-slice"></i><span>icons</span></a>
-                                    <ul class="submenu">
-                                        <li><a href="{{asset('fontawesome.html')}}">fontawesome icons</a></li>
-                                        <li><a href="{{asset('themify.html')}}">themify icons</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><i class="fa fa-table"></i>
-                                        <span>Tables</span></a>
-                                    <ul class="submenu">
-                                        <li><a href="{{asset('table-basic.html')}}">basic table</a></li>
-                                        <li><a href="{{asset('table-layout.html')}}">table layout</a></li>
-                                        <li><a href="{{asset('datatable.html')}}">datatable</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="{{asset('maps.html')}}"><i class="ti-map-alt"></i> <span>maps</span></a></li>
                             </ul>
                         </nav>
                     </div>

@@ -16,12 +16,17 @@ class Reports extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('price');
+            $table->decimal('price', 5, 2);
+            $table->integer('created_by')->unsigned();
+            $table->integer('updated_by')->unsigned();
+            $table->integer('deleted_by')->unsigned()->nullable();
             $table->timestamps();
-            $table->string('created_by');
-            $table->string('updated_by');
-            $table->string('deleted_by');
             $table->softDeletes();
+
+
+            $table->foreign('created_by')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('updated_by')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('deleted_by')->references('id')->on('users')->cascadeOnDelete();
 
         });
     }
