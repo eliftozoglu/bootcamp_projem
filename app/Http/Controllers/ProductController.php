@@ -11,29 +11,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    //front page listing
     public function ProductList(){
         return view ('products.products');
-    }
-    public function PresentationsList(){
-        $presentations=Presentation::all();
-        return view('products.presentations-view',compact('presentations'));
-    }
-    public function ReportsList(){
-        $reports=Report::all();
-        return view('products.reports-view',compact('reports'));
-    }
-    public function EmailsList(){
-        return view('products.emails-view');
-    }
-    public function blog(){
-    return view ('blog.blog-page');
-    }
-    public function pricing(){
-   return view('pricing.pricing-page');
-    }
-    public function addProductView(){
-        return view ('products.addProduct');
     }
     public function productCreate(Request $request) {
 
@@ -59,11 +38,32 @@ class ProductController extends Controller
         return back();
 
     }
+    //front page listings and view
+    public function PresentationsList(){
+        $presentations=Presentation::all();
+        return view('frontpage-products.presentations-view',compact('presentations'));
+    }
+    public function ReportsList(){
+        $reports=Report::all();
+        return view('frontpage-products.reports-view',compact('reports'));
+    }
+    public function EmailsList(){
+        return view('frontpage-products.emails-view');
+    }
+    public function blog(){
+    return view ('blog.blog-page');
+    }
+    public function pricing(){
+   return view('pricing.pricing-page');
+    }
+    public function addProductView(){
+        return view ('products.addProduct');
+    }
     public function indexProduct(){
     $products = Product::where('deleted_at', '=', null )->get();
    return view ('users.productlist',compact('products'));
    }
-   //admin master add product
+   //admin master add product photos for front page
     public function addPresentationView(){
     return view('products.addPresentation');
 }
@@ -127,4 +127,13 @@ class ProductController extends Controller
     }
     public function indexEmails(){        //later
 }
+//single page product view
+   public function SinglePageReport(Request $request,$id=null){
+        $reportdetail = Report::where('id',$id)->first();
+        return view ('frontpage-products.single-page-report' , compact('reportdetail'));
+   }
+    public function SinglePagePresentation(Request $request,$id=null){
+        $presentationdetail = Presentation::where('id',$id)->first();
+        return view ('frontpage-products.single-page-presentation', compact('presentationdetail'));
+    }
 }

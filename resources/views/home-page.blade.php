@@ -45,16 +45,16 @@
                             <div class="megamenu">
                                 <ul class="single-mega cn-col-4">
                                     <li class="title">Presentation Templates</li>
-                                    <li><a href="{{route('product-list')}}">Presentations</a></li>
+                                    <li><a href="{{route('presentation-front-view')}}">Presentations</a></li>
                                 </ul>
                                 <ul class="single-mega cn-col-4">
                                     <li class="title">Report Templates</li>
-                                    <li><a href="{{route('product-list')}}">Reports</a></li>
+                                    <li><a href="{{route('report-front-view')}}">Reports</a></li>
 
                                 </ul>
                                 <ul class="single-mega cn-col-4">
                                     <li class="title">E-mail Templates</li>
-                                    <li><a href="{{route('product-list')}}">E-mails</a></li>
+                                    <li><a href="{{route('email-front-view')}}">E-mails</a></li>
                                 </ul>
                                 <div class="single-mega cn-col-4">
                                     <img src="{{asset('img/bg-img/bg-6.jpg')}}" alt="">

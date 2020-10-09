@@ -61,19 +61,19 @@
                                 </div>
                             </div>
                         </li>
-                        {{--  <li><a href="#">Pages</a>
-                             <ul class="dropdown">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="shop.html">Shop</a></li>
-                                 <li><a href="single-product-details.html">Product Details</a></li>
-                                 <li><a href="checkout.html">Checkout</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="single-blog.html">Single Blog</a></li>
-                                 <li><a href="regular-page.html">Regular Page</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
-                             </ul>
-                         </li>
-                         --}}
+                        {{-- <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="single-product-details.html">Product Details</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-blog.html">Single Blog</a></li>
+                                <li><a href="regular-page.html">Regular Page</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        --}}
                         <li><a href="{{route('blog')}}">Blog</a></li>
                         <li><a href="{{route('pricing')}}">Pricing</a></li>
                     </ul>
@@ -190,11 +190,138 @@
 </div>
 <!-- ##### Right Side Cart End ##### -->
 
+<!-- ##### Breadcumb Area Start ##### -->
+<div class="breadcumb_area bg-img" style="background-image: url(img/bg-img/breadcumb.jpg);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="page-title text-center">
+                    <h2>Templates</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ##### Breadcumb Area End ##### -->
 
- <!-- <div class="contact-area d-flex align-items-center">
-</div> -->
+<!-- ##### Shop Grid Area Start ##### -->
+<section class="shop_grid_area section-padding-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="shop_sidebar_area">
 
-@yield('content')
+                    <!-- ##### Single Widget ##### -->
+                    <div class="widget catagory mb-50">
+                        <!-- Widget Title -->
+                        <h6 class="widget-title mb-30">Categories</h6>
+
+                        <!--  Catagories  -->
+                        <div class="catagories-menu">
+                            <ul id="menu-content2" class="menu-content collapse show">
+                                <!-- Single Item -->
+                                <li data-toggle="collapse" data-target="#clothing">
+                                    <a href="#">Templates</a>
+                                    <ul class="sub-menu collapse show" id="clothing">
+                                        <li><a href="#">Presentations</a></li>
+                                        <li><a href="#">Reports</a></li>
+                                        <li><a href="#">Emails</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Single Item -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ##### Single Widget ##### -->
+                    <!-- ##### Single Widget ##### -->
+                    <!-- ##### Single Widget ##### -->
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="shop_grid_product_area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="product-topbar d-flex align-items-center justify-content-between">
+                                <!-- Total Products -->
+                                <div class="total-products">
+                                    <p><span>50</span> products found</p>
+                                </div>
+                                <!-- Sorting -->
+                                <div class="product-sorting d-flex">
+                                    <p>Sort by:</p>
+                                    <form action="#" method="get">
+                                        <select name="select" id="sortByselect">
+                                            <option value="value">Highest Rated</option>
+                                            <option value="value">Newest</option>
+                                            <option value="value">Price: $$ - $</option>
+                                            <option value="value">Price: $ - $$</option>
+                                        </select>
+                                        <input type="submit" class="d-none" value="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                    @forelse($reports as $report)
+                        <!-- Single Product -->
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="single-product-wrapper">
+                                    <!-- Product Image -->
+                                    <div class="product-img">
+                                        <img src="{{asset('/uploads/products/').'/'.$report->photo}}" alt="">
+                                        <!-- Favourite -->
+                                        <div class="product-favourite">
+                                            <a href="#" class="favme fa fa-heart"></a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product Description -->
+                                    <div class="product-description">
+                                        <span>Report Templates</span>
+                                        <a href="{{asset('single-product-details.html')}}">
+                                            <h6>{{$report->name}}</h6>
+                                        </a>
+                                        <p class="product-price">${{$report->price}}</p>
+
+                                        <!-- Hover Content -->
+                                        <div class="hover-content">
+                                            <!-- Add to Cart -->
+                                            <div class="add-to-cart-btn">
+                                                <a href="#" class="btn essence-btn">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @empty
+                            <h3> no product available</h3>
+                        @endforelse
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <nav aria-label="navigation">
+                    <ul class="pagination mt-50 mb-70">
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">21</a></li>
+                        <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Shop Grid Area End ##### -->
 
 <!-- ##### Footer Area Start ##### -->
 <footer class="footer_area clearfix">
@@ -272,7 +399,6 @@
         </div>
 
     </div>
-
 </footer>
 <!-- ##### Footer Area End ##### -->
 
@@ -288,9 +414,6 @@
 <script src="{{asset('js/classy-nav.min.js')}}"></script>
 <!-- Active js -->
 <script src="{{asset('js/active.js')}}"></script>
-<!-- Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
-<script src="{{asset('js/map-active.js')}}"></script>
 
 </body>
 

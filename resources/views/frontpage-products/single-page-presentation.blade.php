@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Layouts</title>
+    <title>Essence - Fashion Ecommerce Template</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="{{asset('img/core-img/favicon.ico')}}">
@@ -61,19 +61,19 @@
                                 </div>
                             </div>
                         </li>
-                        {{--  <li><a href="#">Pages</a>
-                             <ul class="dropdown">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="shop.html">Shop</a></li>
-                                 <li><a href="single-product-details.html">Product Details</a></li>
-                                 <li><a href="checkout.html">Checkout</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="single-blog.html">Single Blog</a></li>
-                                 <li><a href="regular-page.html">Regular Page</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
-                             </ul>
-                         </li>
-                         --}}
+                        {{-- <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="single-product-details.html">Product Details</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-blog.html">Single Blog</a></li>
+                                <li><a href="regular-page.html">Regular Page</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                        --}}
                         <li><a href="{{route('blog')}}">Blog</a></li>
                         <li><a href="{{route('pricing')}}">Pricing</a></li>
                     </ul>
@@ -190,11 +190,41 @@
 </div>
 <!-- ##### Right Side Cart End ##### -->
 
+<!-- ##### Single Product Details Area Start ##### -->
+<section class="single_product_details_area d-flex align-items-center">
 
- <!-- <div class="contact-area d-flex align-items-center">
-</div> -->
+    <!-- Single Product Thumb -->
+    <div class="single_product_thumb clearfix" >
+        <img src="{{asset('/uploads/products/').'/'.$presentationdetail->photo}}" alt="">
+    </div>
 
-@yield('content')
+    <!-- Single Product Description -->
+    <div class="single_product_desc clearfix">
+        <span>Template</span>
+        <a href="cart.html">
+            <h2>{{$presentationdetail->name}}</h2>
+        </a>
+        <p class="product-price"> ${{$presentationdetail->price}} </p>
+        <p class="product-desc">Mauris viverra cursus ante laoreet eleifend. Donec vel fringilla ante. Aenean finibus velit id urna vehicula, nec maximus est sollicitudin.</p>
+
+        <!-- Form -->
+        <form class="cart-form clearfix" method="post">
+            <!-- Select Box -->
+
+            <!-- Cart & Favourite Box -->
+            <div class="cart-fav-box d-flex align-items-center">
+                <!-- Cart -->
+                <button type="submit" name="addtocart" value="5" class="btn essence-btn">Add to cart</button>
+                <button type="download" name="download" value="5" class="btn essence-btn" style="margin-left: 20px">Download</button>
+                <!-- Favourite -->
+                <div class="product-favourite ml-4">
+                    <a href="#" class="favme fa fa-heart"></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- ##### Single Product Details Area End ##### -->
 
 <!-- ##### Footer Area Start ##### -->
 <footer class="footer_area clearfix">
@@ -272,25 +302,21 @@
         </div>
 
     </div>
-
 </footer>
 <!-- ##### Footer Area End ##### -->
 
 <!-- jQuery (Necessary for All JavaScript Plugins) -->
-<script src="{{asset('js/jquery/jquery-2.2.4.min.js')}}"></script>
+<script src="js/jquery/jquery-2.2.4.min.js"></script>
 <!-- Popper js -->
-<script src="{{asset('js/popper.min.js')}}"></script>
+<script src="js/popper.min.js"></script>
 <!-- Bootstrap js -->
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Plugins js -->
-<script src="{{asset('js/plugins.js')}}"></script>
+<script src="js/plugins.js"></script>
 <!-- Classy Nav js -->
-<script src="{{asset('js/classy-nav.min.js')}}"></script>
+<script src="js/classy-nav.min.js"></script>
 <!-- Active js -->
-<script src="{{asset('js/active.js')}}"></script>
-<!-- Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
-<script src="{{asset('js/map-active.js')}}"></script>
+<script src="js/active.js"></script>
 
 </body>
 
