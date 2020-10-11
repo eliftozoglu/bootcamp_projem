@@ -61,19 +61,19 @@
                                 </div>
                             </div>
                         </li>
-                      {{--   <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="single-product-details.html">Product Details</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="single-blog.html">Single Blog</a></li>
-                                <li><a href="regular-page.html">Regular Page</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </li>
-                        --}}
+                        {{--  <li><a href="#">Pages</a>
+                             <ul class="dropdown">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="shop.html">Shop</a></li>
+                                 <li><a href="single-product-details.html">Product Details</a></li>
+                                 <li><a href="checkout.html">Checkout</a></li>
+                                 <li><a href="blog.html">Blog</a></li>
+                                 <li><a href="single-blog.html">Single Blog</a></li>
+                                 <li><a href="regular-page.html">Regular Page</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
+                             </ul>
+                         </li>
+                         --}}
                         <li><a href="{{route('blog')}}">Blog</a></li>
                         <li><a href="{{route('pricing')}}">Pricing</a></li>
                     </ul>
@@ -101,7 +101,7 @@
             </div>
             <!-- Cart Area -->
             <div class="cart-area">
-                <a href="#" id="essenceCartBtn"><img src="img/core-img/bag.svg" alt=""> <span>3</span></a>
+                <a href="#" id="essenceCartBtn"><img src="{{asset('img/core-img/bag.svg')}}" alt=""> <span>3</span></a>
             </div>
         </div>
 
@@ -190,145 +190,82 @@
 </div>
 <!-- ##### Right Side Cart End ##### -->
 
-<!-- ##### Breadcumb Area Start ##### -->
-<div class="breadcumb_area breadcumb-style-two bg-img" style="background-image: url(img/bg-img/background.jpg);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12">
-                <div class="page-title text-center">
-                    <h2>Blog</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ##### Breadcumb Area End ##### -->
-
 <!-- ##### Blog Wrapper Area Start ##### -->
-<div class="blog-wrapper section-padding-80">
-    <div class="container">
-        <div class="row">
+<div class="single-blog-wrapper">
 
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog1.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
+    <!-- Single Blog Post Thumb -->
+    <div class="single-blog-post-thumb">
+        <img src="img/bg-img/blog.jpg" alt style="padding-left: 40px">
+    </div>
+
+    <!-- Single Blog Content Wrap -->
+    <div class="single-blog-content-wrapper d-flex">
+
+        <!-- Blog Content -->
+        <div class="single-blog--text">
+            <h2>How to be a good presenter?</h2>
+            <blockquote>
+                <h6><i class="fa fa-quote-left" aria-hidden="true"></i> 1. Know the subject</h6>
+            </blockquote>
+            <p>It sounds elemental, but you do need to know what you're talking about.   Your audience is smarter than you perceive them to be.  They can smell a Presenter who is not well versed in the topic from a mile a way.
+                You want to dig into the meat of your topic.  When giving a Presentation in front of an audience, if you are using visuals such as Visme, it should merely highlight the key points of your topic and it is you who needs to be able to get into the nuts and bolts of those points.
+
+                Your audience is there to hear you and it starts with their full attention and depending on how well you present the topics will reflect on how many will still be listening for the remainder of it.
+            </p>
+
+            <blockquote>
+                <h6><i class="fa fa-quote-left" aria-hidden="true"></i> 2. Practice makes perfect</h6>
+            </blockquote>
+
+            <p>This is not about memorizing a speech and practicing it in the mirror over and over again.
+
+                You are presenting to an audience not to yourself; so nothing will prepare you better than getting in front of friends, family or colleagues and tell them to ask relevant questions and provide criticism which can help you to improve and refine your presentation.
+                Additionally you want to recognize that there may be unexpected circumstances when giving your speech, so ask your test audience to interrupt, make noise and to improvise. This way you can prepare for any situation.
+
+                It's not uncommon to have a bad apple in the audience who may be a distraction or there maybe technical issues,  if you are prepared and have the ability to adapt to those conditions you will have little to worry about.
+            </p>
+            <blockquote>
+                <h6><i class="fa fa-quote-left" aria-hidden="true"></i>3. Don't forget the visual support</h6>
+            </blockquote>
+            <p>
+                PowerPoint presentations were and continue to be a norm today, but normal can also be quite boring.
+
+                Get out of the box and try new ways of communicating.  Create interesting visual content and add some oomph to your slides, which can help to draw more attention and use that to reel them to your main objective: Present, inform and engage.
+            </p>
+        </div>
+
+        <!-- Related Blog Post -->
+        <div class="related-blog-post">
+            <!-- Single Related Blog Post -->
+            <div class="single-related-blog-post">
+                <img src="img/bg-img/rp1.jpg" alt="">
+                <a href="#">
+                    <h5>Cras lobortis nisl nec libero pulvinar lacinia. Nunc sed ullamcorper massa</h5>
+                </a>
             </div>
-
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog2.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
+            <!-- Single Related Blog Post -->
+            <div class="single-related-blog-post">
+                <img src="img/bg-img/rp2.jpg" alt="">
+                <a href="#">
+                    <h5>Fusce tincidunt nulla magna, ac euismod quam viverra id. Fusce eget metus feugiat</h5>
+                </a>
             </div>
-
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog3.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
+            <!-- Single Related Blog Post -->
+            <div class="single-related-blog-post">
+                <img src="img/bg-img/rp3.jpg" alt="">
+                <a href="#">
+                    <h5>Etiam leo nibh, consectetur nec orci et, tempus tempus ex</h5>
+                </a>
             </div>
-
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog4.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog5.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Blog Area -->
-            <div class="col-12 col-lg-6">
-                <div class="single-blog-area mb-50">
-                    <img src="img/bg-img/blog6.jpg" alt="">
-                    <!-- Post Title -->
-                    <div class="post-title">
-                        <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                    </div>
-                    <!-- Hover Content -->
-                    <div class="hover-content">
-                        <!-- Post Title -->
-                        <div class="hover-post-title">
-                            <a href="#">Vivamus sed nunc in arcu cursus mollis quis et orci. Interdum et malesuada</a>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim nulla, mollis eu metus in, sagittis fringilla tortor. Phasellus purus dignissim convallis.</p>
-                        <a href="#">Continue reading <i class="fa fa-angle-right"></i></a>
-                    </div>
-                </div>
+            <!-- Single Related Blog Post -->
+            <div class="single-related-blog-post">
+                <img src="img/bg-img/rp4.jpg" alt="">
+                <a href="#">
+                    <h5>Sed viverra pellentesque dictum. Aenean ligula justo, viverra in lacus porttitor</h5>
+                </a>
             </div>
         </div>
+
     </div>
 </div>
 <!-- ##### Blog Wrapper Area End ##### -->
@@ -342,14 +279,14 @@
                 <div class="single_widget_area d-flex mb-30">
                     <!-- Logo -->
                     <div class="footer-logo mr-50">
-                        <a href="#"><img src="img/core-img/layouts-black.png" alt=""></a>
+                        <a href="#"><img src="{{asset('img/core-img/layouts-black.png')}}" alt=""></a>
                     </div>
                     <!-- Footer Menu -->
                     <div class="footer_menu">
                         <ul>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="{{asset('shop.html')}}">Shop</a></li>
+                            <li><a href="{{asset('blog.html')}}">Blog</a></li>
+                            <li><a href="{{asset('pricing.html')}}">Pricing</a></li>
                         </ul>
                     </div>
                 </div>
@@ -409,9 +346,6 @@
         </div>
 
     </div>
-
-
-
 </footer>
 <!-- ##### Footer Area End ##### -->
 

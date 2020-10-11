@@ -40,7 +40,7 @@ Route::get('/indir','ExcelDownloadController@userDownload')->name('user.download
 Route::get('/shop/templates', 'ProductController@PresentationsList')->name('presentation-front-view');
 Route::get('/shop/reports', 'ProductController@ReportsList')->name('report-front-view');
 Route::get('/shop/emails', 'ProductController@EmailsList')->name('email-front-view');
-Route::get('/blog', 'ProductController@blog')->name('blog');
+Route::get('/blog', 'BlogController@blog')->name('blog');
 Route::get('/pricing', 'ProductController@pricing')->name('pricing');
 Route::get('/add-product','ProductController@addProductView')->name('product.add');
 Route::post('/save-product', 'ProductController@productCreate')->name('product.create');

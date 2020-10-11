@@ -14,3 +14,4 @@ class Presentation extends Model
         // bu fonk related dediği yer use tablosuyla ilişkili olduğunu aslında tuttugum şeyin userdaki id  olduğunu ama bendeki karşılık gelen alan da created_by oldugunu yazdım
     }
 }
+

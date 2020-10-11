@@ -50,9 +50,6 @@ class ProductController extends Controller
     public function EmailsList(){
         return view('frontpage-products.emails-view');
     }
-    public function blog(){
-    return view ('blog.blog-page');
-    }
     public function pricing(){
    return view('pricing.pricing-page');
     }
